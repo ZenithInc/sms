@@ -1,0 +1,21 @@
+{
+    "name": "zenithsu/sms",
+    "description": "Easily integrate with multiple SMS service providers like Qiniu Cloud, Alibaba Cloud, and others using our Composer package. Simplify your SMS integration across platforms with ease.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Zenith\\Sms\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "ZenithSu",
+            "email": "happy@hacking.icu"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "qiniu/php-sdk": "^7.12"
+    }
+}
