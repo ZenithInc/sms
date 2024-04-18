@@ -24,10 +24,9 @@ class QiniuSender implements ISender
     public function sendByTemplate(string $phone, string $templateNo, array $args): bool
     {
         [$result, $err] = $this->client->sendMessage($templateNo, [$phone], $args);
-
         $this->result = $result;
-        var_dump($result, $err);
-        return true;
+
+        return $this->result !== null;
     }
 
 
